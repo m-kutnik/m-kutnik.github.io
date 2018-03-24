@@ -1,10 +1,10 @@
 var __wpo = {
   "assets": {
     "main": [
-      "/website-texas/static/js/vendor.225101a16e97578a2c3c.js",
-      "/website-texas/static/js/app.8d7e5feb73b6fff9095a.js",
-      "/website-texas/static/js/manifest.a498959f2321340994d3.js",
-      "/website-texas/static/css/app.471b9246899523f047b81dbcd5c4b583.css",
+      "/static/js/vendor.225101a16e97578a2c3c.js",
+      "/static/js/app.8d7e5feb73b6fff9095a.js",
+      "/static/js/manifest.2ae2e69a05c33dfc65f8.js",
+      "/static/css/app.471b9246899523f047b81dbcd5c4b583.css",
       "/"
     ],
     "additional": [],
@@ -12,15 +12,15 @@ var __wpo = {
   },
   "externals": [],
   "hashesMap": {
-    "7c53711f1d3ea7d59e6e009b9789de521431c574": "/website-texas/static/js/vendor.225101a16e97578a2c3c.js",
-    "fa2c651afa5605b347a47c9ff2646caacce6ebe2": "/website-texas/static/js/app.8d7e5feb73b6fff9095a.js",
-    "07252ed03c5615be0b7914e6ccfe5f66e1a508a9": "/website-texas/static/js/manifest.a498959f2321340994d3.js",
-    "d7b604199dc99a19616a032563530e8ba972b42d": "/website-texas/static/css/app.471b9246899523f047b81dbcd5c4b583.css",
-    "ff2d318c432475e736ba94e7277c8886a724a19e": "/"
+    "7c53711f1d3ea7d59e6e009b9789de521431c574": "/static/js/vendor.225101a16e97578a2c3c.js",
+    "fa2c651afa5605b347a47c9ff2646caacce6ebe2": "/static/js/app.8d7e5feb73b6fff9095a.js",
+    "71dff9423565dde98338fe885c33098093408dcf": "/static/js/manifest.2ae2e69a05c33dfc65f8.js",
+    "d7b604199dc99a19616a032563530e8ba972b42d": "/static/css/app.471b9246899523f047b81dbcd5c4b583.css",
+    "524a36d944387f7dd2bcd67d6ea365a464bb4a1d": "/"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "2018-3-24 10:19:00",
+  "version": "2018-3-24 11:48:39",
   "name": "webpack-offline",
   "pluginVersion": "4.9.0",
   "relativePaths": false
