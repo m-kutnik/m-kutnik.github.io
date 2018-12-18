@@ -80,6 +80,7 @@ article {
   box-sizing: border-box;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
   color: #efefef;
+  position: relative;
 
   & .image {
     width: 100%;
@@ -98,14 +99,19 @@ article {
       width: 50%;
       padding: 0 15px 0 0px;
       box-sizing: border-box;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
     }
 
     & .image {
-      width: 330px;
+      position: absolute;
+      right: -60px;
+      width: 360px;
       height: 220px;
       margin: 90px 0;
-      background-size: cover;
       box-shadow: -6px 6px 80px 5px #00000069;
+      background-position: center;
     }
   }
   @media (min-width: 915px) {
@@ -114,10 +120,10 @@ article {
     padding: 40px 0 40px 80px;
 
     & .image {
-      width: 410px;
+      right: -190px;
+      width: 620px;
       height: 330px;
       margin: 90px 0;
-      background-size: cover;
       box-shadow: -6px 6px 80px 5px #00000069;
     }
   }

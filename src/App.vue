@@ -119,13 +119,6 @@ a {
   background: #232325;
   font-family: "Hind", sans-serif;
 
-  @media (min-width: 715px) {
-    width: 700px;
-  }
-  @media (min-width: 915px) {
-    width: 900px;
-  }
-
   a {
     position: relative;
     padding: 0 2rem 0 0;
