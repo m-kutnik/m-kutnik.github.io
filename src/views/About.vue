@@ -10,7 +10,7 @@
     </p>
     <h2>Technologies and so on... 🤖</h2>
     <p>
-      I know <b>HMTL5, CSS3, SCSS, and UX/UI</b>. My beloved JS framework is
+      I know <b>HTML5, CSS3, SCSS, and UX/UI</b>. My beloved JS framework is
       <b>VueJS</b>. I code in <b>VSCode</b> with tools like <b>Emmet</b> and
       <b>Prettier</b> on daily basis. My VCS? <b>Git</b> ..., and I host my
       projects on Github and Gitlab. In my projects, I use <b>Webpack</b> for
