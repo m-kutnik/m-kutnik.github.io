@@ -10,11 +10,6 @@ export const useDarkMode = () => {
     savedInStorage === null ? !!mediaQuery.matches : !!savedInStorage,
   )
 
-  console.log(
-    savedInStorage === null ? !!mediaQuery.matches : !!savedInStorage,
-    isDark.value,
-  )
-
   if (isDark.value === true) body.classList.add('is-dark')
 
   const toggle = () => {
