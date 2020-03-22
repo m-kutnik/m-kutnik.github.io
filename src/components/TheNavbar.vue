@@ -1,5 +1,8 @@
 <template>
   <nav class="container is-thin flex hidden-on-mobile">
+    <router-link to="/" class="home-button hide-above-mobile">
+      <icon-home />
+    </router-link>
     <router-link
       v-for="item in items"
       :key="item.to"
@@ -33,9 +36,26 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+nav {
+  flex-direction: row;
+}
+
 .item-right {
   margin-left: auto;
 }
+
+.home-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  stroke: rgb(139, 139, 139, 0.5);
+
+  &:focus,
+  &:hover {
+    stroke: var(--link);
+  }
+}
+
 .menu-item {
   position: relative;
   letter-spacing: 0.1em;
