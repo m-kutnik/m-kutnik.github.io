@@ -26,8 +26,16 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  font-weight: 300;
+}
+
 :root {
   --link: var(--secondary);
+}
+
+.no-break {
+  white-space: nowrap;
 }
 
 .h1,
