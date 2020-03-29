@@ -2,7 +2,9 @@
   <div id="app">
     <the-navbar />
     <transition name="slide-fade" mode="out-in" appear>
-      <router-view />
+      <keep-alive>
+        <router-view />
+      </keep-alive>
     </transition>
   </div>
 </template>
