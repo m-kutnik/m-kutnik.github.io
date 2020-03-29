@@ -4,27 +4,24 @@
     <p class="size-5">
       My name is Michał Kutnik. I'm a {{ age }} years old self-taught Javascript
       developer located in <del>Rzeszów</del> <ins>Wrocław</ins> specializing in
-      web development with Vue.js. I work to create intuitive web interfaces,
-      focusing on every small detail to get an over-all user experience to the
-      next level.
+      web development with Vue.js. My goal is to build intuitive web interfaces,
+      focusing on every detail to get an over-all user experience to the next
+      level.
     </p>
-    <p class="size-5">
-      I grew up with computers and technology all around me. I was always
-      fascinated by everyday things, so I started disassembling them to see
-      what's inside and how they work. Thank God they still worked fine after
-      assembling them back. When I was a child my
+    <!-- <p class="size-5">
+      I grew up with computers and technology all around me. My
       <em class="no-break">[information removed]</em>
-      taught me how I can crack a Satellite TV box to unlock my favorite
-      cartoons (but shhh, don't tell the police). My adventure with
-      <em>"programming"</em> started when I was 12 and got my first
-      <em>own</em> PC. I used it to host the private Metin2 server I created for
-      me and my friends. It was using my scripts written in LUA to customize the
-      game's behavior. They were written in a very
-      <em>"change things and see what has changed"-ish</em> manner, but hey... I
-      was 12.<br />
-      <span class="no-break">That's how I got hooked in... ¯\_(ツ)_/¯</span>
-    </p>
-    <p class="size-5">I decided to get into web development.</p>
+      taught me how to crack a Satellite TV box, so I could unlock my favorite
+      cartoons by myself (but shh, don't tell the police). I started my
+      adventure with <em>"programming"</em> when I was 12 y/o and got my first
+      <em>own</em> PC. I used that piece of silicon to host a private Metin2
+      server for me and my friends. The server used my own LUA scripts to
+      customize the game's behavior. They were written in a very
+      <em>"modify code and see what's changed"</em>-ish manner, but hey... I was
+      12.<br />
+      That's how <span class="no-break">I got hooked in... ¯\_(ツ)_/¯</span>
+    </p> -->
+    <p class="size-5"><em>More from me soon...</em></p>
   </article>
 </template>
 
