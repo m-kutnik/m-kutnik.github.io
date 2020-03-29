@@ -42,16 +42,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.flex > * {
+  margin-top: 0;
+}
+
 .is-4 {
   display: flex;
 }
 
 .social-links a {
-  stroke: rgba(139, 139, 139, 0.5);
+  color: rgba(139, 139, 139, 0.5);
   padding: 5px;
 
   &:hover {
-    stroke: var(--link);
+    color: var(--link);
   }
 }
 </style>
