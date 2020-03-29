@@ -4,18 +4,18 @@
       <icon-home />
     </router-link>
     <app-navigation class="hide-on-mobile" />
-    <theme-switcher class="item-right" />
+    <app-theme-switcher class="item-right" />
   </nav>
 </template>
 
 <script>
-import ThemeSwitcher from '@/components/ThemeSwitcher'
+import AppThemeSwitcher from '@/components/AppThemeSwitcher'
 import AppNavigation from './AppNavigation'
 
 export default {
   name: 'TheNavbar',
   components: {
-    ThemeSwitcher,
+    AppThemeSwitcher,
     AppNavigation,
   },
 }
@@ -33,11 +33,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  stroke: rgb(139, 139, 139, 0.5);
+  color: rgb(139, 139, 139, 0.5);
 
   &:focus,
   &:hover {
-    stroke: var(--link);
+    color: var(--link);
   }
 }
 </style>

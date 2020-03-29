@@ -34,13 +34,13 @@ export default {
   align-items: center;
   background: none;
   border: none;
-  stroke: rgb(139, 139, 139, 0.5);
+  color: rgb(139, 139, 139, 0.5);
   cursor: pointer;
   margin-bottom: 32px;
 
   &:focus,
   &:hover {
-    stroke: var(--link);
+    color: var(--link);
   }
 }
 </style>
