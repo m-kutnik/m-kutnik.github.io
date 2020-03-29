@@ -2,7 +2,7 @@
   <div class="flex">
     <router-link
       v-for="item in items"
-      :key="item.to"
+      :key="item.to.name"
       :to="item.to"
       class="menu-item"
     >
@@ -16,10 +16,10 @@ export default {
   name: 'AppNavigation',
   setup() {
     const items = [
-      { name: 'Home', to: '/' },
-      { name: 'About me', to: '/about' },
-      { name: 'Projects', to: '/projects' },
-      { name: 'Contact', to: '/contact' },
+      { name: 'Home', to: { name: 'Home' } },
+      { name: 'About me', to: { name: 'About' } },
+      { name: 'Projects', to: { name: 'Projects' } },
+      { name: 'Contact', to: { name: 'Contact' } },
     ]
 
     return { items }
@@ -28,6 +28,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width: 48rem) {
+  .menu-item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .menu-item {
   position: relative;
   letter-spacing: 0.1em;
@@ -50,7 +57,7 @@ export default {
   }
 
   &:hover::after,
-  &.router-link-exact-active::after {
+  &.router-link-active::after {
     transform: scale(1, 1);
     transform-origin: 0% 50%;
   }
