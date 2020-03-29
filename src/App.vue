@@ -60,7 +60,7 @@ body {
 }
 .slide-fade-enter,
 .slide-fade-leave-to {
-  transform: translateX(10px);
+  transform: translateY(10px);
   opacity: 0;
 }
 </style>
