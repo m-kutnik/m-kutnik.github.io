@@ -3,35 +3,20 @@
     <router-link to="/" class="home-button hide-above-mobile">
       <icon-home />
     </router-link>
-    <router-link
-      v-for="item in items"
-      :key="item.to"
-      :to="item.to"
-      class="menu-item hide-on-mobile"
-    >
-      {{ item.name }}
-    </router-link>
+    <app-navigation class="hide-on-mobile" />
     <theme-switcher class="item-right" />
   </nav>
 </template>
 
 <script>
 import ThemeSwitcher from '@/components/ThemeSwitcher'
+import AppNavigation from './AppNavigation'
 
 export default {
   name: 'TheNavbar',
   components: {
     ThemeSwitcher,
-  },
-  setup() {
-    const items = [
-      { name: 'Home', to: '/' },
-      { name: 'About me', to: '/about' },
-      { name: 'Projects', to: '/projects' },
-      { name: 'Contact', to: '/contact' },
-    ]
-
-    return { items }
+    AppNavigation,
   },
 }
 </script>
@@ -53,34 +38,6 @@ nav {
   &:focus,
   &:hover {
     stroke: var(--link);
-  }
-}
-
-.menu-item {
-  position: relative;
-  letter-spacing: 0.1em;
-  line-height: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &::after {
-    left: 0;
-    right: 0;
-    content: '';
-    position: absolute;
-    height: 2px;
-    background: var(--link);
-    bottom: -4px;
-    transform: scale(0, 1);
-    transform-origin: 100% 50%;
-    transition: transform 0.2s var(--transition-function);
-  }
-
-  &:hover::after,
-  &.router-link-exact-active::after {
-    transform: scale(1, 1);
-    transform-origin: 0% 50%;
   }
 }
 </style>
