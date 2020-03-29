@@ -7,7 +7,10 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   routes,
   mode: 'history',
-  scrollBehavior() {
+  scrollBehavior(to, from) {
+    if (to.path === from.path) {
+      return {}
+    }
     return { x: 0, y: 0 }
   },
 })
