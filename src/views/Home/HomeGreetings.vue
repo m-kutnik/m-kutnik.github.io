@@ -3,19 +3,19 @@
     <h1 class="h3">Greetings, Traveler 👋</h1>
     <p class="subtitle is-spaced">
       <em
-        >I'm Mike, <strong>Vue.js Developer</strong> from Wrocław,<br />
+        >I'm Mike, <strong>Vue.js Developer</strong> from Wrocław<br />
         willing to
-        <router-link to="" class="underline"
-          ><strong>make your life easier,</strong></router-link
+        <a href="#automation" class="underline"
+          ><strong>make your life easier,</strong></a
         ><br />
         your
-        <router-link to="" class="underline"
-          ><strong>goals achieved faster,</strong></router-link
+        <a href="#ci" class="underline"
+          ><strong>goals achieved faster,</strong></a
         ><br />
         and
-        <router-link to="/contact" class="underline">
+        <a href="#ideas" class="underline">
           <strong>your ideas... a reality.</strong>
-        </router-link></em
+        </a></em
       >
     </p>
   </article>

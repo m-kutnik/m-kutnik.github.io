@@ -1,5 +1,5 @@
 <template functional>
-  <article id="resume" class="section tech is-dark">
+  <article id="resume" class="section resume is-dark">
     <div class="container is-thin">
       <div class="grid">
         <h2 class="h5"><strong>Experience</strong></h2>
@@ -19,13 +19,13 @@
             </p>
           </section>
         </article>
-        <h2 class="h5"><strong>Technologies / Skills</strong></h2>
+        <h2 class="h5"><strong>Technologies &amp; Skills</strong></h2>
         <article>
           <ul>
             <li class="h5">Vue (2 &amp; 3)</li>
             <li class="h5">JavaScript ES6+</li>
-            <li class="h5">CSS + SCSS</li>
             <li class="h5">HTML5</li>
+            <li class="h5">CSS + SCSS</li>
             <li class="h5">Webpack + Babel</li>
             <li class="h5">RESTful architecture</li>
             <li class="h5">Jest</li>
@@ -37,19 +37,25 @@
             <li class="h5">Gitlab CI/CD</li>
             <li class="h5">Github Actions</li>
             <li class="h5">VS Code</li>
-            <li class="h5">Emmet</li>
           </ul>
         </article>
         <h2 class="h5"><strong>Learning</strong></h2>
         <article>
           <ul>
             <li class="h5">TypeScript</li>
-            <li class="h5">Deno</li>
+            <li class="h5">Deno + Node</li>
             <li class="h5">AWS</li>
           </ul>
         </article>
+        <h2 class="h5"><strong>Languages</strong></h2>
+        <article>
+          <ul>
+            <li class="h5">Polish <em>(native)</em></li>
+            <li class="h5">English <em>(CEFR B2)</em></li>
+          </ul>
+        </article>
       </div>
-      <div class="text-centered">
+      <div class="about text-centered">
         <router-link to="/about" class="underline size-5">
           <strong>More about me</strong>
         </router-link>
@@ -62,11 +68,11 @@ strong {
   font-weight: bold;
 }
 
-.tech {
+.resume {
   background: var(--tertiary);
 }
 
-.is-dark .tech {
+.is-dark .resume {
   background: #272727;
 }
 
@@ -92,5 +98,9 @@ ul {
     grid-template-columns: auto;
     justify-content: center;
   }
+}
+
+.about {
+  margin-top: 4rem;
 }
 </style>
