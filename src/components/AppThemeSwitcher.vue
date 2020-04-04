@@ -30,13 +30,13 @@ export default {
 <style lang="scss" scoped>
 .theme-switcher {
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: none;
+  justify-content: center;
   border: none;
+  margin-bottom: 32px;
+  background: none;
   color: rgb(139, 139, 139, 0.5);
   cursor: pointer;
-  margin-bottom: 32px;
 
   &:focus,
   &:hover {

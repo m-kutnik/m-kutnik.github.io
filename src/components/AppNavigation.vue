@@ -30,27 +30,27 @@ export default {
 <style lang="scss" scoped>
 @media screen and (max-width: 48rem) {
   .menu-item {
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
   }
 }
 
 .menu-item {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   letter-spacing: 0.1em;
   line-height: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   &::after {
-    left: 0;
-    right: 0;
-    content: '';
     position: absolute;
+    right: 0;
+    bottom: -4px;
+    left: 0;
     height: 2px;
     background: var(--link);
-    bottom: -4px;
+    content: '';
     transform: scale(0, 1);
     transform-origin: 100% 50%;
     transition: transform 0.2s var(--transition-function);

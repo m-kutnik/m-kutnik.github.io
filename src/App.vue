@@ -61,7 +61,7 @@ body {
 
 .slide-fade-enter,
 .slide-fade-leave-to {
-  transform: translateY(10px);
   opacity: 0;
+  transform: translateY(10px);
 }
 </style>

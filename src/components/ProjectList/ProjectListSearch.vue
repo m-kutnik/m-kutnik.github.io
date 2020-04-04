@@ -53,24 +53,24 @@ export default {
 
 <style lang="scss" scoped>
 .input {
-  width: 300px;
   display: flex;
-  background: hsla(0, 0%, 50%, 0.15);
-  border: 1px solid hsla(0, 0%, 50%, 0.15);
-  border-radius: 2px;
+  width: 300px;
   padding: 2px 0 2px 5px;
+  border: 1px solid hsla(0, 0%, 50%, 0.15);
+  background: hsla(0, 0%, 50%, 0.15);
+  border-radius: 2px;
   transition: box-shadow 0.1s ease-in-out;
 
   &:focus-within {
-    box-shadow: 0 0 5px var(--link);
     border: 1px solid var(--link);
+    box-shadow: 0 0 5px var(--link);
   }
 
   input {
+    width: 100%;
+    border: none;
     background: none;
     outline: none;
-    border: none;
-    width: 100%;
 
     .is-dark & {
       color: hsla(0, 0%, 100%, 0.7);
@@ -79,11 +79,11 @@ export default {
 }
 
 .input-icon {
-  cursor: pointer;
-  color: hsla(0, 0%, 50%, 0.5);
-  width: 26px;
-  padding: 0 5px;
-  box-sizing: border-box;
   display: flex;
+  width: 26px;
+  box-sizing: border-box;
+  padding: 0 5px;
+  color: hsla(0, 0%, 50%, 0.5);
+  cursor: pointer;
 }
 </style>

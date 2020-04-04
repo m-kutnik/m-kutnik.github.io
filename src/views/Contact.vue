@@ -51,8 +51,8 @@ export default {
 }
 
 .social-links a {
-  color: rgba(139, 139, 139, 0.5);
   padding: 5px;
+  color: rgba(139, 139, 139, 0.5);
 
   &:hover {
     color: var(--link);

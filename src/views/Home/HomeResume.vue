@@ -77,10 +77,10 @@ strong {
 }
 
 ul {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 0;
   list-style-type: none;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-inline-start: 0;
 
   & li {
     margin-bottom: 0;
@@ -88,15 +88,15 @@ ul {
 }
 
 .grid {
-  flex: 1;
   display: grid;
-  grid-template-columns: 40% 60%;
+  flex: 1;
   column-gap: 2rem;
+  grid-template-columns: 40% 60%;
   row-gap: 2rem;
 
   @media screen and (max-width: 480px) {
-    grid-template-columns: auto;
     justify-content: center;
+    grid-template-columns: auto;
   }
 }
 

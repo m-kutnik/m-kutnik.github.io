@@ -31,8 +31,8 @@ nav {
 
 .home-button {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   color: rgb(139, 139, 139, 0.5);
 
   &:focus,
