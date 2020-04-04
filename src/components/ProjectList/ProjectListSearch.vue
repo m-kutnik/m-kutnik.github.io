@@ -53,6 +53,7 @@ export default {
 
 <style lang="scss" scoped>
 .input {
+  width: 300px;
   display: flex;
   background: hsla(0, 0%, 50%, 0.15);
   border: 1px solid hsla(0, 0%, 50%, 0.15);
