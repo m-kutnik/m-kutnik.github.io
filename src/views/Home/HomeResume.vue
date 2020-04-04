@@ -82,7 +82,7 @@ ul {
   margin-block-start: 0;
   padding-inline-start: 0;
 
-  & li {
+  li {
     margin-bottom: 0;
   }
 }
