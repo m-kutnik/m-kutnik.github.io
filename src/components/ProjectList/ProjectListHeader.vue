@@ -1,18 +1,15 @@
 <template>
-  <div class="flex">
-    <project-list-tags />
-    <project-list-search class="item-right" />
+  <div>
+    <project-list-search class="is-5 item-right" />
   </div>
 </template>
 
 <script>
-import ProjectListTags from './ProjectListTags'
 import ProjectListSearch from './ProjectListSearch'
 
 export default {
   name: 'ProjectListHeader',
   components: {
-    ProjectListTags,
     ProjectListSearch,
   },
 }
