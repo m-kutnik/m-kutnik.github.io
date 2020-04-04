@@ -76,9 +76,11 @@
   .flex {
     flex-direction: column-reverse;
   }
+
   .flex > * {
     margin: 0;
   }
+
   .animation {
     height: 250px;
   }

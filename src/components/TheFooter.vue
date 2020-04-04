@@ -20,14 +20,15 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.is-dark .footer {
-  background: #272727;
+.footer {
+  background: var(--tertiary);
+
+  .is-dark & {
+    background: #272727;
+  }
 }
 
 .justify-center {
   justify-content: center;
-}
-.footer {
-  background: var(--tertiary);
 }
 </style>

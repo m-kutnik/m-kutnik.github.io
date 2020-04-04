@@ -1,13 +1,15 @@
-const path = require('path') // eslint-disable-line
-const PrerenderSPAPlugin = require('prerender-spa-plugin')
+const path = require('path'); // eslint-disable-line
+// const PrerenderSPAPlugin = require('prerender-spa-plugin')
 
-const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
+// const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 
 module.exports = {
   publicPath: '',
+
   devServer: {
     disableHostCheck: true,
   },
+
   chainWebpack: config => {
     if (process.env.NODE_ENV === 'production') {
       // config.plugin('prerender').use(PrerenderSPAPlugin, [
@@ -20,5 +22,10 @@ module.exports = {
       //   },
       // ])
     }
+  },
+
+  pluginOptions: {
+    lintStyleOnBuild: true,
+    stylelint: {},
   },
 }

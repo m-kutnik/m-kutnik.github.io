@@ -58,6 +58,7 @@ body {
 .slide-fade-enter-active {
   transition: all 0.2s cubic-bezier(0.65, 0, 0.35, 1);
 }
+
 .slide-fade-enter,
 .slide-fade-leave-to {
   transform: translateY(10px);

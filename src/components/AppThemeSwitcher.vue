@@ -6,7 +6,7 @@
     class="theme-switcher"
     @click="toggle"
   >
-    <icon-moon v-if="isDark" style="currentColor: red" />
+    <icon-moon v-if="isDark" />
     <icon-sun v-else />
   </button>
 </template>
