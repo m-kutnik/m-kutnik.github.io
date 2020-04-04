@@ -68,10 +68,11 @@ export default {
 
   input {
     width: 100%;
-    border: none;
+    border: none; // stylelint-disable-line
     background: none;
     outline: none;
 
+    // stylelint-disable-next-line
     .is-dark & {
       color: hsla(0, 0%, 100%, 0.7);
     }

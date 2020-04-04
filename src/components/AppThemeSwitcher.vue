@@ -32,7 +32,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
+  border: none; // stylelint-disable-line
   margin-bottom: 32px;
   background: none;
   color: rgb(139, 139, 139, 0.5);
