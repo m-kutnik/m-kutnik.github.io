@@ -3,6 +3,7 @@ import '@/assets/dwarf.css'
 import '@/plugins/composition-api'
 import '@/plugins/icons'
 import '@/plugins/lottie'
+import '@/plugins/lazy-image'
 import App from './App'
 import router from './router'
 
