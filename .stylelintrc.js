@@ -9,10 +9,10 @@ module.exports = {
   rules: {
     'order/properties-alphabetical-order': null,
     'string-no-newline': null,
-    'selector-class-pattern': /^[a-zA-Z-]*(-(enter|leave)(-(active|to))?)?$/,
+    'selector-class-pattern': /^[a-zA-Z-0-9]*(-(enter|leave)(-(active|to))?)?$/,
     'selector-id-pattern': /^[a-zA-Z-]*$/,
     'selector-max-universal': 1,
-    'selector-max-type': [0, { ignore: ['child', 'descendant', 'compounded'] }],
+    'selector-max-type': null,
     // ===
     // SCSS
     // ===
