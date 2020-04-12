@@ -5,12 +5,12 @@ name: Github Pages deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: [ dev ]
   pull_request:
-    branches: [ master ]
+    branches: [ dev ]
 
 jobs:
-  sync:
+  deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
