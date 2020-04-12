@@ -25,8 +25,8 @@ jobs:
       run: |
         npm ci
         npm run build --modern
-    - name: compress-action
-      uses: Charlesworth/compress-action@1.0.0
+    - name: Compress with Brotli
+      uses: m-kutnik/compress-action@1.0.0
       with:
         target-directory: 'dist'
     - name: GitHub Pages deploy
