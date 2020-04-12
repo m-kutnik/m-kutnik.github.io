@@ -13,6 +13,7 @@ module.exports = {
     'selector-id-pattern': /^[a-zA-Z-]*$/,
     'selector-max-universal': 1,
     'selector-max-type': null,
+    'max-nesting-depth': 2,
     // ===
     // SCSS
     // ===
