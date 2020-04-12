@@ -24,8 +24,12 @@ export default [
     component: () => import('@/views/Contact'),
   },
   {
-    path: '*',
+    path: '/404-not-found',
     name: '404',
     component: () => import('@/views/404'),
+  },
+  {
+    path: '*',
+    redirect: '/404-not-found',
   },
 ]
