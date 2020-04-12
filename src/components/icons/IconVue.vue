@@ -1,18 +1,26 @@
-// Icon by FontAwesome
 <template functional>
   <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
     aria-hidden="true"
     focusable="false"
-    data-prefix="fab"
-    data-icon="vuejs"
-    class="svg-inline--fa fa-vuejs fa-w-14"
-    role="img"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 448 512"
+    width="1.16em"
+    height="1em"
+    style="
+    
+  transform: rotate(360deg);
+  vertical-align: -0.125em;"
+    preserveAspectRatio="xMidYMid meet"
+    viewBox="0 0 256 221"
   >
     <path
-      fill="currentColor"
-      d="M356.9 64.3H280l-56 88.6-48-88.6H0L224 448 448 64.3h-91.1zm-301.2 32h53.8L224 294.5 338.4 96.3h53.8L224 384.5 55.7 96.3z"
-    ></path>
+      d="M204.8 0H256L128 220.8L0 0h97.92L128 51.2L157.44 0h47.36z"
+      fill="#41B883"
+    />
+    <path d="M0 0l128 220.8L256 0h-51.2L128 132.48L50.56 0H0z" fill="#41B883" />
+    <path
+      d="M50.56 0L128 133.12L204.8 0h-47.36L128 51.2L97.92 0H50.56z"
+      fill="#35495E"
+    />
   </svg>
 </template>
