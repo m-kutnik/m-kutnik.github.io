@@ -51,8 +51,8 @@
         </h2>
         <p class="size-5">
           Turning ideas into reality is not a simple task, but I know people you
-          will need in the whole process. Starting from application architecture
-          and design, ending on infrastructure and deployment- we are ready to
+          will need in the whole process. Starting from design and application
+          architecture, ending on infrastructure and deployment- we are ready to
           help you.
           <router-link to="contact" class="underline"
             ><strong>Contact me</strong></router-link
