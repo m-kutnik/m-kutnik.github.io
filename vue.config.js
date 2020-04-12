@@ -3,8 +3,6 @@ const StyleLintPlugin = require('stylelint-webpack-plugin')
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
 
 module.exports = {
-  publicPath: '',
-
   devServer: {
     disableHostCheck: true,
   },
@@ -14,7 +12,7 @@ module.exports = {
       config.plugin('prerender').use(PrerenderSPAPlugin, [
         {
           staticDir: path.join(__dirname, 'dist'),
-          routes: ['/home', '/about', '/projects', '/contact'],
+          routes: ['/home', '/about', '/projects', '/contact', '/404'],
         },
       ])
     }
