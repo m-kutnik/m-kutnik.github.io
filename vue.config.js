@@ -1,8 +1,6 @@
 const path = require('path') // eslint-disable-line
 const StyleLintPlugin = require('stylelint-webpack-plugin')
-// const PrerenderSPAPlugin = require('prerender-spa-plugin')
-
-// const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
+const PrerenderSPAPlugin = require('prerender-spa-plugin')
 
 module.exports = {
   publicPath: '',
@@ -13,15 +11,12 @@ module.exports = {
 
   chainWebpack: config => {
     if (process.env.NODE_ENV === 'production') {
-      // config.plugin('prerender').use(PrerenderSPAPlugin, [
-      //   {
-      //     staticDir: path.join(__dirname, 'dist'),
-      //     routes: ['/'],
-      //     renderer: new Renderer({
-      //       args: ['--disable-gpu'],
-      //     }),
-      //   },
-      // ])
+      config.plugin('prerender').use(PrerenderSPAPlugin, [
+        {
+          staticDir: path.join(__dirname, 'dist'),
+          routes: ['/home', '/about', '/projects', '/contact'],
+        },
+      ])
     }
 
     config.plugin('stylelint').use(StyleLintPlugin, [
