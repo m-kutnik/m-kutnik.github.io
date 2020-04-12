@@ -77,6 +77,10 @@ export default {
       color: hsla(0, 0%, 100%, 0.7);
     }
   }
+
+  @media screen and (max-width: 48rem) {
+    width: 100%;
+  }
 }
 
 .input-icon {
