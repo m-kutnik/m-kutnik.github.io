@@ -5,26 +5,44 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lint:style": "vue-cli-service lint:style"
   },
   "dependencies": {
-    "vue": "^2.5.17",
-    "vue-router": "^3.0.1"
+    "@babel/plugin-proposal-optional-chaining": "^7.9.0",
+    "@vue/composition-api": "^0.5.0",
+    "core-js": "^3.6.4",
+    "lodash": "^4.17.15",
+    "lottie-vuejs": "0.3.6",
+    "prerender-spa-plugin": "^3.4.0",
+    "v-lazy-image": "^1.4.0",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.4",
-    "@vue/cli-plugin-eslint": "^3.0.4",
-    "@vue/cli-service": "^3.0.4",
-    "@vue/eslint-config-prettier": "^4.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0-0",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.1",
-    "vue-template-compiler": "^2.5.17"
-  },
-  "prettier": {
-    "semi": false,
-    "trailingComma": "all"
+    "@ascendancyy/vue-cli-plugin-stylelint": "^1.1.2",
+    "@m-kutnik/eslint-config": "^1.1.0",
+    "@vue/cli-plugin-babel": "~4.2.0",
+    "@vue/cli-plugin-eslint": "~4.2.0",
+    "@vue/cli-plugin-router": "~4.2.0",
+    "@vue/cli-service": "~4.2.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-import-resolver-webpack": "^0.12.1",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^6.1.2",
+    "prettier": "^1.19.1",
+    "prettier-stylelint": "^0.4.2",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "stylelint": "^13.3.0",
+    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-prettier": "^7.0.0",
+    "stylelint-config-sass-guidelines": "^7.0.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-webpack-plugin": "^1.2.3",
+    "vue-template-compiler": "^2.6.11"
   }
 }

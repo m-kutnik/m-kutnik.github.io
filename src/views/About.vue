@@ -1,41 +1,42 @@
 <template>
-  <section class="about main">
-    <h2>Greetings, Traveler 👋</h2>
-    <p>
-      My name is Michał Kutnik but call me Mike. I'm {{ age() }} y/o Front-end
-      Developer from Rzeszów, Poland (but I'm willing to move). I've been
-      working as JS Developer and certified IT Technician since 2015. I'm
-      interested in cybersecurity and I would like to develop myself in that
-      field. Open Source world is my second home.
+  <article class="section about container is-thin">
+    <h1 class="h3">About me 👨‍💻</h1>
+    <p class="size-5">
+      My name is Michał Kutnik. I'm a {{ age }} years old self-taught Javascript
+      developer located in <del>Rzeszów</del> <ins>Wrocław</ins> specializing in
+      web development with Vue.js. My goal is to build intuitive web interfaces,
+      focusing on every detail to get an over-all user experience to the next
+      level.
     </p>
-    <h2>Technologies and so on... 🤖</h2>
-    <p>
-      I know <b>HTML5, CSS3, SCSS, and UX/UI</b>. My beloved JS framework is
-      <b>VueJS</b>. I code in <b>VSCode</b> with tools like <b>Emmet</b> and
-      <b>Prettier</b> on daily basis. My VCS? <b>Git</b> ..., and I host my
-      projects on Github and Gitlab. In my projects, I use <b>Webpack</b> for
-      bundling. <b> 🧶 Yarn > NPM</b>
-    </p>
-    <p>My life goal is to create <b>GLaDOS</b></p>
-    <RouterLink to="/projects"><h2>Some of my projects 👈</h2></RouterLink>
-  </section>
+    <!-- <p class="size-5">
+      I grew up with computers and technology all around me. My
+      <em class="no-break">[information removed]</em>
+      taught me how to crack a Satellite TV box, so I could unlock my favorite
+      cartoons by myself (but shh, don't tell the police). I started my
+      adventure with <em>"programming"</em> when I was 12 y/o and got my first
+      <em>own</em> PC. I used that piece of silicon to host a private Metin2
+      server for me and my friends. The server used my own LUA scripts to
+      customize the game's behavior. They were written in a very
+      <em>"modify code and see what's changed"</em>-ish manner, but hey... I was
+      12.<br />
+      That's how <span class="no-break">I got hooked in... ¯\_(ツ)_/¯</span>
+    </p> -->
+    <p class="size-5"><em>More from me soon...</em></p>
+  </article>
 </template>
+
 <script>
 export default {
-  name: "About",
-  methods: {
-    age() {
-      const date = new Date()
-      return date.getFullYear() - 1998
-    },
+  name: 'About',
+  setup() {
+    const age = new Date().getFullYear() - 1998
+
+    return { age }
   },
 }
 </script>
-
 <style lang="scss" scoped>
-p {
-  line-height: 2.5em;
-  font-size: 16px;
-  padding: 0 0 40px 0;
+ins {
+  text-decoration: none;
 }
 </style>

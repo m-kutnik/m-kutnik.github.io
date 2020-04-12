@@ -1,42 +1,61 @@
 <template>
-  <section class="contact main">
-    <h2>
-      It's dangerous to go alone! Take this! 🗡️<br />
-      ... or take me with you! 🙋‍♂️
-    </h2>
-    <p>You can find me here:</p>
-    <div class="social">
-      <a
-        href="https://www.linkedin.com/in/micha%C5%82-kutnik-065538131/"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><i class="fab fa-linkedin"></i
-      ></a>
-      <a
-        href="https://github.com/m-kutnik"
-        target="_blank"
-        rel="noopener noreferrer"
-        ><i class="fab fa-github"></i
-      ></a>
-      <a href="http://m.me/m2.kutnik" target="_blank" rel="noopener noreferrer"
-        ><i class="fab fa-facebook-messenger"></i
-      ></a>
+  <article class="section contact container is-thin">
+    <div class="flex">
+      <div class="is-7">
+        <h1 class="h3">Let's get in touch 🤙</h1>
+        <p class="size-5 is-spaced">
+          <em>
+            looking for a contributor to your OSS project?<br />
+            have some one million dollar ideas?<br />
+            want me in your team?<br /><br />
+            <strong>I'm open to new possibilities.</strong>
+          </em>
+        </p>
+        <p class="social-links">
+          <a
+            href="http://bit.ly/mk-gthb"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><icon-github />
+          </a>
+          <a
+            href="http://bit.ly/mk-lnkdin"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><icon-linkedin
+          /></a>
+        </p>
+      </div>
+      <div class="is-4">
+        <div class="search-animation hide-on-mobile">
+          <lottie-animation path="lotties/search.json" />
+        </div>
+      </div>
     </div>
-  </section>
+  </article>
 </template>
-<style lang="scss" scoped>
-p {
-  line-height: 2.5em;
-  font-size: 16px;
-}
-.social {
-  font-size: 46px;
-  a {
-    padding: 0 15px;
 
-    &:hover {
-      color: #949494;
-    }
+<script>
+export default {
+  name: 'Contact',
+}
+</script>
+
+<style lang="scss" scoped>
+.flex > * {
+  margin-top: 0;
+}
+
+.is-4 {
+  display: flex;
+}
+
+.social-links a {
+  padding: 5px;
+  color: rgba(139, 139, 139, 0.5);
+
+  &:hover {
+    color: var(--link);
   }
 }
 </style>
