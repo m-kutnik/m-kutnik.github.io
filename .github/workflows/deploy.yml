@@ -25,11 +25,6 @@ jobs:
         npm ci
         npm run build --modern
       
-    - name: Compress with Brotli
-      uses: m-kutnik/compress-action@1.0.1
-      with:
-        target-directory: 'dist'
-      
     - name: GitHub Pages deploy
       uses: peaceiris/actions-gh-pages@v3.5.6
       with:
