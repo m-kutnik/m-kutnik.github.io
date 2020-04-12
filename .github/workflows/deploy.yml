@@ -25,9 +25,8 @@ jobs:
       run: |
         npm ci
         npm run build --modern
-    - name: Brotli compress the html, css and js files in the "build" directory
-      id: brotli
-      uses: charlesworth/compress-action@1.0
+    - name: compress-action
+      uses: Charlesworth/compress-action@1.0.0
       with:
         target-directory: 'dist'
     - name: GitHub Pages deploy
